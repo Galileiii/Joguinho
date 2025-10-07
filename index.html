@@ -24,15 +24,69 @@
       <audio id="musica-fundo" src="./audios/[YTTD - OST] 54 - seme (mp3cut.net).mp3" autoplay loop></audio>
     </div>
     
-    <!-- TELA DO JOGO (escondida até clicar em Jogar) -->
-    <div id="tela-jogo" class="tela oculta" style="display: none">
-      <!-- inicialmente escondida por conta do display none -->
-        <audio id="musica-fundo2" src="./audios/Color Your Night (Instrumental Version) (Full Version)  Persona 3 Reload OST (Extended Version).mp3" autoplay loop></audio>
-      <header class="topbar">
-        <button id="btn-voltar" class="btn-pequeno">Voltar</button>
-        <h2>Jogo de Vestir</h2>
+  
       </header>
+      <!-- Tela do Jogo -->
+<div id="tela-jogo" style="display:none;">
+  <header id="top-bar">
+     <audio id="musica-fundo2" src="./audios/Color Your Night (Instrumental Version) (Full Version)  Persona 3 Reload OST (Extended Version).mp3" autoplay loop></audio>
+    <button id="btn-voltar">back</button>
+    <img id="logo-topo" src="./img/logo.png" alt="">
+    <div id="controle-volume">
+      <img src="./icons/volume-icon.png" alt="volume">
+      <input type="range" id="slider-volume" min="0" max="1" step="0.1" value="0.5">
     </div>
+  </header>
+
+  <main id="main-area">
+    <!-- Coluna esquerda -->
+    <aside id="painel-esquerda">
+      <img src="./icons/hair-icon.png" alt="hair">
+      <img src="./icons/brow-icon.png" alt="brows">
+      <img src="./icons/eye-icon.png" alt="eyes">
+      <img src="./icons/mouth-icon.png" alt="mouth">
+      <img src="./icons/top-icon.png" alt="top">
+      <img src="./icons/bottom-icon.png" alt="bottom">
+      <img src="./icons/accs-icon.png" alt="acc1">
+      <img src="./icons/accs-icon.png" alt="acc2">
+      <img src="./icons/accs-icon.png" alt="acc3">
+      <img src="./icons/neck-icon.png" alt="neck">
+      <img src="./icons/glasses-icon.png" alt="glasses">
+    </aside>
+
+    <!-- Área central (personagem) -->
+    <section id="personagem-area">
+      <div id="controle-itens">
+        <button id="btn-prev">&lt;</button>
+        <button id="btn-next">&gt;</button>
+      </div>
+
+      <div id="personagem-container">
+        <img id="base" src="./assets/base.png" alt="base">
+        <img id="hair">
+        <img id="brows">
+        <img id="eyes">
+        <img id="mouth">
+        <img id="top">
+        <img id="bottom">
+        <img id="acc1">
+        <img id="acc2">
+        <img id="acc3">
+        <img id="neck">
+        <img id="glasses">
+      </div>
+    </section>
+
+    <!-- Coluna direita -->
+    <aside id="painel-direita">
+      <button id="btn-reset"><img  id="resetbt-icon" src="./icons/reset-icon.png" alt="reset"></button>
+      <button id="btn-random"><img src="./icons/random-icon.png" alt="random"></button>
+      <button id="btn-save"><img src="./icons/save-icon.png" alt="save"></button>
+    </aside>
+  </main>
+</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
      <script src="./script.js"></script>
   </body>
 </html>

@@ -37,9 +37,6 @@ html, body {
     background-color: #1d242d;
     transform: scale(1.05);
 }
-.btn-pequeno{
-    
-}
 .logo {
     position: relative;
     z-index: 1;
@@ -68,4 +65,159 @@ html, body {
 .tela.oculta {
     opacity: 0;
     pointer-events: none;
+}
+/* ---------- TELA DO JOGO ---------- */
+#tela-jogo {
+  background-color: #cceeff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Barra superior */
+#top-bar {
+  background-color: #2e3a40;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 100px;
+}
+
+#top-bar button {
+  background-color: #b7e7ff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+#top-bar button:hover {
+  background-color: #a0d4ff;}
+
+#logo-topo {
+  width: 280px;
+}
+#logo-topo:hover {
+  animation: pulse 1.5s infinite;
+}
+
+#controle-volume {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#controle-volume img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Área principal */
+#main-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Painéis laterais */
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#painel-esquerda img,
+#painel-direita button img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+#painel-esquerda {
+    max-height: 30vh; /* ou ajuste para o valor desejado */
+    overflow-y: auto;
+}
+#painel-esquerda img:hover {
+ animation: pulse 1.5s infinite;
+ background-color: #a4e1ff;
+ border-radius: 10px;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }}
+#painel-direita button {
+  background-color: #2e3a40;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#painel-direita button:hover {
+  background-color: #3a4a52;
+}
+
+/* Área do personagem */
+#personagem-area {
+  background-color: #b7e7ff;
+  width: 600px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* centraliza verticalmente */
+  position: relative;
+  overflow: hidden;
+  /* margin: 0 auto;  (opcional, se quiser centralizar horizontalmente) */
+}
+
+#personagem-container {
+  width: 90%;      /* aumente para deixar maior */
+  height: 80%;     /* aumente para deixar maior */
+  max-width: 800px;
+  max-height: 800px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 44px;
+  margin-left: -40px;
+}
+
+#personagem-container img {
+  width: 1000px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+/* Controles de item */
+#controle-itens button {
+  background: none;
+  border: none;
+  font-size: 60px; /* aumente o tamanho das setas */
+  cursor: pointer;
+  color: #2e3a40;
+}
+
+#controle-itens {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px; /* espaço entre setas e personagem */
+  position: static;    /* REMOVA position: absolute */
+  z-index: 2;
 }

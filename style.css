@@ -37,6 +37,9 @@ html, body {
     background-color: #1d242d;
     transform: scale(1.05);
 }
+.btn-pequeno{
+    
+}
 .logo {
     position: relative;
     z-index: 1;

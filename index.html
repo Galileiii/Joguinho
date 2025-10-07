@@ -10,26 +10,26 @@
   <body>
     <!-- TELA INICIAL -->
     <div id="tela-inicial" class="tela">
-      <div class="logo"><img src="./Design_sem_nome-removebg-preview.png" alt="" /></div>
+      <div class="logo"><img src="./img/logo.png" alt="" /></div>
       <button id="btn-jogar" class="btn">PLAY</button>
       <audio
         id="audio-click"
-        src="./SELECT Button Sound Effect (1).mp3"
+        src="./audios/SELECT Button Sound Effect (1).mp3"
         preload="auto"
       ></audio>
        <video id="bg-video" autoplay muted loop playsinline>
-        <source src="./background.MP4" type="video/mp4" />
+        <source src="./img/background.MP4" type="video/mp4" />
         Seu navegador não suporta vídeo em HTML5.
       </video>
-      <audio id="musica-fundo" src="./[YTTD - OST] 54 - seme (mp3cut.net).mp3" autoplay loop></audio>
+      <audio id="musica-fundo" src="./audios/[YTTD - OST] 54 - seme (mp3cut.net).mp3" autoplay loop></audio>
     </div>
     
     <!-- TELA DO JOGO (escondida até clicar em Jogar) -->
     <div id="tela-jogo" class="tela oculta" style="display: none">
       <!-- inicialmente escondida por conta do display none -->
-        <audio id="musica-fundo2" src="./Color Your Night (Instrumental Version) (Full Version)  Persona 3 Reload OST (Extended Version).mp3" autoplay loop></audio>
+        <audio id="musica-fundo2" src="./audios/Color Your Night (Instrumental Version) (Full Version)  Persona 3 Reload OST (Extended Version).mp3" autoplay loop></audio>
       <header class="topbar">
-        <button id="btn-voltar" class="btn pequeno">Voltar</button>
+        <button id="btn-voltar" class="btn-pequeno">Voltar</button>
         <h2>Jogo de Vestir</h2>
       </header>
     </div>

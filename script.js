@@ -132,7 +132,7 @@ const imagens = {
   eyes: document.getElementById("eyes"),
   mouth: document.getElementById("mouth"),
   top: document.getElementById("top"),
-  bottom: document.getElementById("bottom"),
+    bottom: document.getElementById("bottom"),
   acc1: document.getElementById("acc1"),
   acc2: document.getElementById("acc2"),
   acc3: document.getElementById("acc3"),

@@ -1,4 +1,5 @@
 Gatenho Dresser is a dress-up and character customization game in the “avatar maker” style, developed using HTML, CSS, and JavaScript. The player can mix and match different outfits, accessories, and facial expressions to create their own unique character.
+
 ❗❗❗ALL ASSETS ARE ENTIRELY DRAWN BY ME — PLEASE DON’T STEAL❗❗❗
 
 The interface is simple and intuitive, featuring side buttons to navigate between categories (clothes, hair, eyes, mouth, etc.) and arrows to switch between available items. There are also three functional buttons:

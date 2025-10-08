@@ -1,20 +1,20 @@
-Gatenho Dresser é um jogo de vestir e personalizar personagens no estilo “avatar maker”, desenvolvido em HTML, CSS e JavaScript. O jogador pode escolher diferentes roupas, acessórios e expressões faciais para montar seu próprio personagem.
+Gatenho Dresser is a dress-up and character customization game in the “avatar maker” style, developed using HTML, CSS, and JavaScript. The player can mix and match different outfits, accessories, and facial expressions to create their own unique character.
 
-A interface é simples e intuitiva, com botões laterais para navegar entre as categorias (roupas, cabelo, olhos, boca, etc.) e setas para trocar os itens disponíveis.
-Há também três botões funcionais:
+The interface is simple and intuitive, featuring side buttons to navigate between categories (clothes, hair, eyes, mouth, etc.) and arrows to switch between available items. There are also three functional buttons:
 
-🔄 Reset: remove todos os itens e deixa apenas a base do personagem.
-❓ Random: gera uma combinação aleatória de roupas e acessórios.
-💾 Save: salva o personagem montado como uma imagem.
+🔄 Reset: Removes all items, leaving only the base character.
+❓ Random: Generates a random combination of clothes and accessories.
+💾 Save: Saves the created character as an image.
 
-O projeto tem como objetivo praticar manipulação do DOM, uso de event listeners, arrays de imagens e lógica de seleção e randomização em JavaScript.
+The main goal of this project is to practice DOM manipulation, event listeners, image arrays, and randomization logic in JavaScript.
 
-🧩 Tecnologias utilizadas
+🧩 Technologies Used
 
 HTML5
 CSS3
 JavaScript (ES6)
-📁 Estrutura de arquivos
+
+📁 File Structure
 
 index.html
 style.css
